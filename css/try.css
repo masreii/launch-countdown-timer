@@ -1,0 +1,49 @@
+.inner-section{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 10rem;
+}
+
+.countdown-container {
+  text-align: center;
+  width: 55%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+ 
+}
+
+.time-box {
+  width: 18%;
+}
+
+.time-box span {
+  background: #2e2e44;
+  padding: 20px 10px;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #f24e89;
+}
+
+.time-box p {
+  font-weight: 700;
+  margin-top: 18px;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  color: #888;
+}

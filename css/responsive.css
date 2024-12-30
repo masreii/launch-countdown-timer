@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+  .countdown-container {
+    width: 65%;
+  }
+
+  .time-box {
+    width: 28%;
+  }
+}
+
+@media (max-width: 580px) {
+  .countdown-container {
+    width: 80%;
+
+  }
+
+  .time-box {
+    width: 20%;
+  }
+
+  .time-box span {
+    font-size: 2.5rem;
+  }
+
+  .time-box p {
+    font-size: 0.7rem;
+  }
+}
