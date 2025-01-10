@@ -1,5 +1,8 @@
+
+const launchDate = new Date("Jan 15, 2025 00:00:00").getTime();
+let timer
+
 const countdown = () => {
-  const launchDate = new Date("Jan 10, 2025 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = launchDate - now;
   
@@ -17,8 +20,18 @@ const countdown = () => {
   document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
   document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
   document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+  if (gap <= 0) {
+    clearInterval(timer); // Hentikan timer
+    // Opsional: Tampilkan pesan "Launch Time!"
+    document.getElementById("days").innerText = "00";
+    document.getElementById("hours").innerText = "00";
+    document.getElementById("minutes").innerText = "00";
+    document.getElementById("seconds").innerText = "00";
+  }
 };
 
-setInterval(countdown,1000);
+
+timer = setInterval(countdown,1000);
+console.log(timer)
 
 
